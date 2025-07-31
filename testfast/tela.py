@@ -1,9 +1,8 @@
-# tela.py
 from tkinter import *
 from threading import Thread
 from Main import vinibubumguloso
 
-# Cores
+
 c0 = '#FF5733'
 c1 = '#33FF57'
 c2 = '#3357FF'
@@ -30,12 +29,15 @@ def rodar_teste():
     label_resultado.config(text=texto)
     botao.config(state=NORMAL)
 
-# Interface gráfica
+
 janela = Tk()
 janela.title("Teste de Internet")
 janela.geometry('350x200')
 janela.configure(background=c2)
 janela.resizable(width=False, height=False)
+
+
+janela.iconbitmap('180163.ico')
 
 frame_logo = Frame(janela, width=350, height=60, background=c1)
 frame_logo.grid(row=0, column=0, pady=1, padx=0, sticky=NSEW)
